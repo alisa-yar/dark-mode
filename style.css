@@ -1,0 +1,16 @@
+:root {
+    --bg: #FFF;
+}
+
+.dark-mode {
+    --bg: #1A1A1A;
+}
+    
+#icon {
+    width: 30px;
+    padding: 0;
+}
+  
+.html {
+    background-color: var(--bg);
+}
