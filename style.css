@@ -1,16 +1,23 @@
 :root {
-    --bg: #FFF;
+  --bg: #FFF;
 }
 
 .dark-mode {
-    --bg: #1A1A1A;
+  --bg: #1A1A1A;
 }
     
 #icon {
-    width: 30px;
-    padding: 0;
+  width: 30px;
+  margin-top: 15em;
 }
   
-.body {
-    background-color: var(--bg);
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
+
+body {
+  background-color: var(--bg);
+  color: var(--bg);
 }
