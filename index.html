@@ -1,15 +1,51 @@
-<!doctype html>
-<html>
-  
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Dark and Light Mode Switch</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Dark and Light Mode</title>
+    <style>
+        :root {
+            --bg: black;
+            --text: white;
+        }
+        .light-mode {
+            --bg: white;
+            --text: black;
+        }
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;          
+        }
+        body {
+            margin: 10px;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;           
+            flex-direction: column;           
+            align-items: center; 
+        }
+        button {
+            border: none;
+        }
+        #icon {
+            width: 30px;
+        }
+    </style>
 </head>
   
-<body>  
- <img class="icon" id="icon" src="moon.png">
- <script src="dark.js"></script>
+<body>
+    <h1>Dark and Light Mode Switcher</h1> 
+    <img id="icon" onclick="changeTheme()" src="https://dark-and-light-theme.netlify.app/sun.png">
+    <script>
+        function changeTheme() {
+            document.body.classList.toggle("light-mode")
+            if(document.body.classList.contains("light-mode")){
+                document.getElementById("icon").src = "https://dark-and-light-theme.netlify.app/moon.png";
+            }
+            else {
+                document.getElementById("icon").src = "https://dark-and-light-theme.netlify.app/sun.png";
+            }
+        }
+    </script>
 </body>
 </html>
