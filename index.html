@@ -35,15 +35,15 @@
   
 <body>
     <h1>Dark and Light Mode Switcher</h1> 
-    <img id="icon" onclick="changeTheme()" src="https://dark-and-light-theme.netlify.app/sun.png">
+    <img id="icon" onclick="changeTheme()" src="sun.png">
     <script>
         function changeTheme() {
             document.body.classList.toggle("light-mode")
             if(document.body.classList.contains("light-mode")){
-                document.getElementById("icon").src = "https://dark-and-light-theme.netlify.app/moon.png";
+                document.getElementById("icon").src = "moon.png";
             }
             else {
-                document.getElementById("icon").src = "https://dark-and-light-theme.netlify.app/sun.png";
+                document.getElementById("icon").src = "sun.png";
             }
         }
     </script>
